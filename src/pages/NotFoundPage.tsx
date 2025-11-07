@@ -9,7 +9,7 @@ const NotFoundPage: React.FC = () => {
             <Seo
                 title={`404 - Page Not Found | ${businessInfo.name}`}
                 description="The page you are looking for does not exist."
-                canonicalUrl={`https://${businessInfo.domain}/#/404`}
+                canonicalUrl={`https://${businessInfo.domain}/404`}
             />
             <div className="flex items-center justify-center min-h-[60vh] bg-white">
                 <div className="text-center">

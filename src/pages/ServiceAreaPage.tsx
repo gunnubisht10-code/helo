@@ -15,7 +15,7 @@ const ServiceAreaPage: React.FC = () => {
         return <Navigate to="/404" replace />;
     }
 
-    const pageUrl = `https://${businessInfo.domain}/#/service-areas/${area.slug}`;
+    const pageUrl = `https://${businessInfo.domain}/service-areas/${area.slug}`;
     const crumbs: Breadcrumb[] = [{ name: 'Service Areas', path: '/service-areas' }, { name: `${area.city}, ${area.state}`, path: `/service-areas/${area.slug}` }];
 
     const localSchema = {

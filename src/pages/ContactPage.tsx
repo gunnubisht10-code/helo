@@ -6,7 +6,7 @@ import Breadcrumbs from '../components/Breadcrumbs';
 import { Breadcrumb } from '../types';
 
 const ContactPage: React.FC = () => {
-    const pageUrl = `https://${businessInfo.domain}/#/contact`;
+    const pageUrl = `https://${businessInfo.domain}/contact`;
     const crumbs: Breadcrumb[] = [{ name: 'Contact Us', path: '/contact' }];
 
     const jsonLd = {

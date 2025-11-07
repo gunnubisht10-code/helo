@@ -7,7 +7,7 @@ import Breadcrumbs from '../components/Breadcrumbs';
 import { Breadcrumb } from '../types';
 
 const LocalHubPage: React.FC = () => {
-    const pageUrl = `https://${businessInfo.domain}/#/local-attractions`;
+    const pageUrl = `https://${businessInfo.domain}/local-attractions`;
     const crumbs: Breadcrumb[] = [{ name: 'Local Attractions', path: '/local-attractions' }];
 
     return (

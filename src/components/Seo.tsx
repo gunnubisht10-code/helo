@@ -86,7 +86,7 @@ const Seo: React.FC<SeoProps> = ({ title, description, canonicalUrl, ogType = 'w
                     "@type": "ListItem",
                     "position": index + 2,
                     "name": crumb.name,
-                    "item": `https://${businessInfo.domain}/#${crumb.path}`
+                    "item": `https://${businessInfo.domain}${crumb.path}`
                 }))
             ]
         };
@@ -99,7 +99,7 @@ const Seo: React.FC<SeoProps> = ({ title, description, canonicalUrl, ogType = 'w
         if (!scriptElement) {
             scriptElement = document.createElement('script');
             scriptElement.id = scriptId;
-            scriptElement.type = 'application/ld+json';
+            scriptElement.setAttribute('type', 'application/ld+json');
             document.head.appendChild(scriptElement);
         }
         scriptElement.innerHTML = JSON.stringify(allJsonLd);
