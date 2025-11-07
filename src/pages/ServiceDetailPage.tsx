@@ -14,7 +14,7 @@ const ServiceDetailPage: React.FC = () => {
         return <Navigate to="/404" replace />;
     }
 
-    const pageUrl = `https://${businessInfo.domain}/services/${service.slug}`;
+    const pageUrl = `https://${businessInfo.domain}/#/services/${service.slug}`;
     const crumbs: Breadcrumb[] = [{ name: 'Services', path: '/services' }, { name: service.title, path: `/services/${service.slug}` }];
 
     const serviceSchema = {

@@ -8,7 +8,7 @@ import Breadcrumbs from '../components/Breadcrumbs';
 import { Breadcrumb } from '../types';
 
 const ServiceAreaHubPage: React.FC = () => {
-    const pageUrl = `https://${businessInfo.domain}/service-areas`;
+    const pageUrl = `https://${businessInfo.domain}/#/service-areas`;
     const crumbs: Breadcrumb[] = [{ name: 'Service Areas', path: '/service-areas' }];
 
     return (
