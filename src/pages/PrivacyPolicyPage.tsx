@@ -5,7 +5,7 @@ import Breadcrumbs from '../components/Breadcrumbs';
 import { Breadcrumb } from '../types';
 
 const PrivacyPolicyPage: React.FC = () => {
-    const pageUrl = `https://${businessInfo.domain}/privacy-policy`;
+    const pageUrl = `https://${businessInfo.domain}/#/privacy-policy`;
     const crumbs: Breadcrumb[] = [{ name: 'Privacy Policy', path: '/privacy-policy' }];
 
     return (

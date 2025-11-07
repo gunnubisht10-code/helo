@@ -5,7 +5,7 @@ import Breadcrumbs from '../components/Breadcrumbs';
 import { Breadcrumb } from '../types';
 
 const DisclaimerPage: React.FC = () => {
-    const pageUrl = `https://${businessInfo.domain}/disclaimer`;
+    const pageUrl = `https://${businessInfo.domain}/#/disclaimer`;
     const crumbs: Breadcrumb[] = [{ name: 'Disclaimer', path: '/disclaimer' }];
 
     return (

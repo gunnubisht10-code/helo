@@ -86,7 +86,7 @@ const Seo: React.FC<SeoProps> = ({ title, description, canonicalUrl, ogType = 'w
                     "@type": "ListItem",
                     "position": index + 2,
                     "name": crumb.name,
-                    "item": `https://${businessInfo.domain}${crumb.path}`
+                    "item": `https://${businessInfo.domain}/#${crumb.path}`
                 }))
             ]
         };

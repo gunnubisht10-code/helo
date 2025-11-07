@@ -14,7 +14,7 @@ const AttractionPage: React.FC = () => {
         return <Navigate to="/404" replace />;
     }
 
-    const pageUrl = `https://${businessInfo.domain}/local-attractions/${attraction.slug}`;
+    const pageUrl = `https://${businessInfo.domain}/#/local-attractions/${attraction.slug}`;
     const crumbs: Breadcrumb[] = [
         { name: 'Local Attractions', path: '/local-attractions' }, 
         { name: attraction.name, path: `/local-attractions/${attraction.slug}` }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import StickyFooter from './components/StickyFooter';
@@ -20,7 +20,7 @@ import ScrollToTop from './hooks/useScrollToTop';
 
 const App: React.FC = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <div className="flex flex-col min-h-screen bg-neutral-light font-sans text-neutral-dark">
         <Header />
@@ -44,7 +44,7 @@ const App: React.FC = () => {
         <Footer />
         <StickyFooter />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
